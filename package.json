@@ -1,0 +1,16 @@
+{
+  "name": "draggable-widget",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "live": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "gridstack": "^3.1.4",
+    "sortablejs": "^1.13.0"
+  }
+}
