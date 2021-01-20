@@ -8,14 +8,14 @@ function sortableInit() {
       swapThreshold: 0.3,
       handle: '.handle',
       animation: 150,
-      ghostClass: 'blue-background-class',
-      swapClass: 'swap-highlight-class',
+      ghostClass: 'sortable-ghost',
+      swapClass: 'sortable-swap',
       forceFallback: true,
       fallbackClass: 'sortable-fallback',
       fallbackTolerance: 50,
       onMove: function (evt, originalEvt) {
-        console.log(evt);
-        console.log(originalEvt);
+        console.dir(evt.dragged);
+        console.log(evt.related);
       },
     });
     console.log('>> Sortable.js init success');

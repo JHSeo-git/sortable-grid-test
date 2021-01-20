@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <link href="./dist/css/main.css" rel="stylesheet" />
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <header class="header">
+          <div class="header__column">
+            <div class="icon home-icon">
+              <svg
+                width="28"
+                height="29"
+                viewBox="0 0 28 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.0442 5.50367L22.7442 12.6501C22.9073 12.8014 23 13.0139 23 13.2364V22.6986C23 23.1404 22.6418 23.4986 22.2 23.4986H16.8C16.3582 23.4986 16 23.1404 16 22.6986V19.4986H13V22.6986C13 23.1404 12.6418 23.4986 12.2 23.4986H6.8C6.35817 23.4986 6 23.1404 6 22.6986V13.2364C6 13.0139 6.09268 12.8014 6.25579 12.6501L13.9558 5.50367C14.2627 5.21883 14.7373 5.21883 15.0442 5.50367Z"
+                  fill="#2C3238"
+                />
+              </svg>
+            </div>
+            <span class="header-title">Home</span>
+          </div>
+          <div class="header__column">
+            <span class="config-title">위젯 설정</span>
+            <div class="icon config-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.7309 6.97432L16.4109 5.83242C16.6653 5.65979 17.0063 5.69179 17.2236 5.90905L18.0909 6.77642C18.3074 6.99368 18.3402 7.33474 18.1676 7.58905L17.0206 9.27495C17.2118 9.62695 17.3659 9.99242 17.4779 10.3697C17.4813 10.3731 17.4838 10.3756 17.488 10.3781L19.4804 10.7579C19.7819 10.8152 20 11.0787 20 11.3861V12.6131C20 12.9204 19.7819 13.184 19.4804 13.2413L17.488 13.6211C17.4838 13.6244 17.4813 13.6269 17.4779 13.6303C17.3667 14.0042 17.2143 14.368 17.0248 14.7175V14.7309L18.1676 16.4109C18.3402 16.6644 18.3074 17.0063 18.0909 17.2227L17.2236 18.0901C17.0063 18.3074 16.6653 18.3402 16.4109 18.1667L14.7309 17.0248C14.7267 17.0248 14.7225 17.0248 14.7175 17.024C14.3688 17.2135 14.0051 17.3667 13.6303 17.4779L13.6211 17.4872L13.2421 19.4796C13.1848 19.7811 12.9204 20 12.6131 20H11.3869C11.0796 20 10.8152 19.7811 10.7587 19.4796L10.3773 17.4796C10.0008 17.3684 9.63453 17.2152 9.28253 17.024C9.27747 17.0248 9.27326 17.0248 9.26905 17.0248L7.58905 18.1667C7.33558 18.3402 6.99368 18.3074 6.77726 18.0901L5.90989 17.2227C5.69179 17.0055 5.65895 16.6669 5.83158 16.4126C6.01201 16.1475 6.24751 15.8012 6.45823 15.4914C6.72942 15.0926 6.95957 14.7542 6.97853 14.7267C6.97812 14.7255 6.97781 14.7246 6.97757 14.724C6.97679 14.7217 6.97664 14.7213 6.976 14.7175C6.78653 14.368 6.63326 14.0042 6.52295 13.6303C6.51874 13.6269 6.51621 13.6244 6.51284 13.6211L4.52042 13.2413C4.21811 13.184 4 12.9204 4 12.6131V11.3869C4 11.0787 4.21811 10.8152 4.52042 10.7579L6.51284 10.3781C6.51621 10.3756 6.51874 10.3731 6.5221 10.3697C6.63326 9.99495 6.78653 9.63116 6.976 9.28168C6.97516 9.27747 6.97516 9.27326 6.97516 9.26905L5.83242 7.58905C5.65979 7.33474 5.69179 6.99368 5.90989 6.77642L6.77726 5.90905C6.99453 5.69179 7.33558 5.65979 7.58905 5.83242L9.26905 6.97432C9.27326 6.97516 9.27747 6.97516 9.28253 6.97516C9.632 6.78568 9.99579 6.63326 10.3697 6.52211C10.3731 6.51874 10.3756 6.51621 10.3789 6.512L10.7587 4.51958C10.8152 4.21811 11.0796 4 11.3869 4H12.6139C12.9204 4 13.1848 4.21811 13.2421 4.51958L13.6211 6.512C13.6244 6.51621 13.6269 6.51874 13.6303 6.52211C14.0051 6.63326 14.3688 6.78568 14.7175 6.97516C14.7201 6.97516 14.7225 6.97493 14.7248 6.97471C14.7269 6.97451 14.7289 6.97432 14.7309 6.97432ZM12 14.3529C13.2998 14.3529 14.3529 13.2998 14.3529 12C14.3529 10.7002 13.2998 9.64706 12 9.64706C10.7002 9.64706 9.64706 10.7002 9.64706 12C9.64706 13.2998 10.7002 14.3529 12 14.3529Z"
+                  fill="#8996A3"
+                />
+              </svg>
+            </div>
+          </div>
+        </header>
+        <main class="widget-main">
+          <div class="widget-main__row">
+            <div class="widget-main__column">
+              <div class="widget-box main-box">
+                <div class="widget-box__header">
+                  <div class="icon menu-icon handle">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.3332 16.7895V17.875H3.6665V16.7895H18.3332ZM18.3332 10.4572V11.5428H3.6665V10.4572H18.3332ZM18.3332 4.125V5.21053H3.6665V4.125H18.3332Z"
+                        fill="#424952"
+                      />
+                    </svg>
+                  </div>
+                  <div class="widget-box__header-content">My To-Do 1</div>
+                </div>
+                <div class="widget-box__content">test test</div>
+              </div>
+            </div>
+            <div class="widget-main__column">
+              <div class="widget-box sm-box">
+                <div class="widget-box__header">
+                  <div class="icon menu-icon handle">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.3332 16.7895V17.875H3.6665V16.7895H18.3332ZM18.3332 10.4572V11.5428H3.6665V10.4572H18.3332ZM18.3332 4.125V5.21053H3.6665V4.125H18.3332Z"
+                        fill="#424952"
+                      />
+                    </svg>
+                  </div>
+                  <div class="widget-box__header-content">My To-Do 2</div>
+                </div>
+                <div class="widget-box__content">test test</div>
+              </div>
+              <div class="widget-box sm-box">
+                <div class="widget-box__header">
+                  <div class="icon menu-icon handle">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.3332 16.7895V17.875H3.6665V16.7895H18.3332ZM18.3332 10.4572V11.5428H3.6665V10.4572H18.3332ZM18.3332 4.125V5.21053H3.6665V4.125H18.3332Z"
+                        fill="#424952"
+                      />
+                    </svg>
+                  </div>
+                  <div class="widget-box__header-content">My To-Do 3</div>
+                </div>
+                <div class="widget-box__content">test test</div>
+              </div>
+            </div>
+          </div>
+          <div class="widget-main__row">
+            <div class="widget-main__column">
+              <div class="widget-box md-box">
+                <div class="widget-box__header">
+                  <div class="icon menu-icon handle">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.3332 16.7895V17.875H3.6665V16.7895H18.3332ZM18.3332 10.4572V11.5428H3.6665V10.4572H18.3332ZM18.3332 4.125V5.21053H3.6665V4.125H18.3332Z"
+                        fill="#424952"
+                      />
+                    </svg>
+                  </div>
+                  <div class="widget-box__header-content">My To-Do 4</div>
+                </div>
+                <div class="widget-box__content">test test</div>
+              </div>
+            </div>
+            <div class="widget-main__column">
+              <div class="widget-box md-box">
+                <div class="widget-box__header">
+                  <div class="icon menu-icon handle">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.3332 16.7895V17.875H3.6665V16.7895H18.3332ZM18.3332 10.4572V11.5428H3.6665V10.4572H18.3332ZM18.3332 4.125V5.21053H3.6665V4.125H18.3332Z"
+                        fill="#424952"
+                      />
+                    </svg>
+                  </div>
+                  <div class="widget-box__header-content">My To-Do 5</div>
+                </div>
+                <div class="widget-box__content">test test</div>
+              </div>
+            </div>
+            <div class="widget-main__column">
+              <div class="widget-box md-box">
+                <div class="widget-box__header">
+                  <div class="icon menu-icon handle">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.3332 16.7895V17.875H3.6665V16.7895H18.3332ZM18.3332 10.4572V11.5428H3.6665V10.4572H18.3332ZM18.3332 4.125V5.21053H3.6665V4.125H18.3332Z"
+                        fill="#424952"
+                      />
+                    </svg>
+                  </div>
+                  <div class="widget-box__header-content">My To-Do 6</div>
+                </div>
+                <div class="widget-box__content">test test</div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

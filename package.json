@@ -4,13 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "live": "live-server"
+    "live": "live-server",
+    "live:main": "live-server main.html",
+    "sass:watch": "node-sass --watch src/main.scss --output dist/css"
   },
   "devDependencies": {
     "live-server": "^1.2.1"
   },
   "dependencies": {
     "gridstack": "^3.1.4",
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.4",
     "sortablejs": "^1.13.0"
   }
 }
